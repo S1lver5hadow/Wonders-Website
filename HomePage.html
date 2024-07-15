@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Sets the title of the webpage-->
+    <title>New Seven Wonders Of The World</title>
+    <!--Sets the icon of the webpage-->
+    <link rel="icon" href="Icon.ico">
+    <!--Linking to the main CSS file used-->
+    <link rel="stylesheet" href="MainCSS.css">
+    <!--Linking to the main JavaScript file used-->
+    <script src="MainScript.js"></script>
+    <!--Sets the background image to take up the entire screen and never repeat-->
+    <style>
+        body {
+            background-image: url("HomeBackground.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Title at the top of the page-->
+    <div style="background-color:black">Witness the new "Seven Wonders Of The World"</div>
+    <!--Navigation bar-->
+    <ul>
+        <li><a class="active" href="HomePage.html">Home</a></li>
+        <li><a href="Pyramid.html">Great Pyramid Of Giza</a></li>
+        <li><a href="Wall.html">Great Wall Of China</a></li>
+        <li><a href="Petra.html">Petra</a></li>
+        <li><a href="Colosseum.html">The Colosseum</a></li>
+        <li><a href="Itza.html">Chichén Itzá</a></li>
+        <li><a href="Machu.html">Machu Picchu</a></li>
+        <li><a href="Taj.html">Taj Mahal</a></li>
+        <li><a href="Christ.html">Christ The Redeemer</a></li>
+    </ul>
+    <!--Animated flashy text-->
+    <div class=mainText>
+        Explore the World
+    </div>
+    <!--Explains how to move from the main page to a specific wonder-->
+    <p style="text-align:center;">
+        Get started by clicking on the image of the wonder you'd like to visit or use the button to go to a random wonder.
+    </p>
+    <!--Button that takes you to a random wonder-->
+    <button id="randomButton" class="buttonRand" onclick="randomButtonClick()">Choose for me</button>
+    <br><br><br>
+    <!--An image of the seven wonders is mapped so that if the user clicks on a specific wonder, it will take them to the relevent webpage-->
+    <img src="Seven_Wonders_Image.jpg" alt="Seven Wonders" usemap="#WorldMap" style="display:block; margin-left:auto; margin-right:auto;">
+    <map name="WorldMap">
+        <area shape="rect" coords="0,0,320,480" alt="The Colosseum" href="Colosseum.html">
+        <area shape="rect" coords="320,0,640,480" alt="Machu Picchu" href="Machu.html">
+        <area shape="rect" coords="640,0,960,480" alt="Taj Mahal" href="Taj.html">
+        <area shape="rect" coords="960,0,1280,480" alt="Great Pyramid Of Giza" href="Pyramid.html">
+        <area shape="rect" coords="0,480,320,960" alt="Christ The Redeemer" href="Christ.html">
+        <area shape="rect" coords="320,480,640,960" alt="Chichén Itzá" href="Itza.html">
+        <area shape="rect" coords="640,480,960,960" alt="Petra" href="Petra.html">
+        <area shape="rect" coords="960,480,1280,960" alt="Great Wall Of China" href="Wall.html">
+    </map>
+</body>
+</html>

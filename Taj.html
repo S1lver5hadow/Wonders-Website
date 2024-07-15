@@ -1,0 +1,87 @@
+<html>
+<head>
+    <!--Sets the title of the webpage-->
+    <title>Taj Mahal</title>
+    <!--Sets the icon of the webpage-->
+    <link rel="icon" href="Icon.ico">
+    <!--Linking to the main CSS file used-->
+    <link rel="stylesheet" href="MainCSS.css">
+    <!--Linking to the main JavaScript file used-->
+    <script src="MainScript.js"></script>
+    <!--Sets the background image to take up the entire screen and never repeat-->
+    <style>
+        body {
+            background-image:url("TajSurroundings.jpg");
+            background-repeat:no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Title at the top of the page-->
+    <div style="background-color:black">Taj Mahal</div>
+    <!--Navigation bar-->
+    <ul>
+        <li><a href="HomePage.html">Home</a></li>
+        <li><a href="Pyramid.html">Great Pyramid Of Giza</a></li>
+        <li><a href="Wall.html">Great Wall Of China</a></li>
+        <li><a href="Petra.html">Petra</a></li>
+        <li><a href="Colosseum.html">The Colosseum</a></li>
+        <li><a href="Itza.html">Chichén Itzá</a></li>
+        <li><a href="Machu.html">Machu Picchu</a></li>
+        <li><a class="active" href="Taj.html">Taj Mahal</a></li>
+        <li><a href="Christ.html">Christ The Redeemer</a></li>
+    </ul>
+    <!--Animated flashy text-->
+    <div class="mainText">
+        Explore a Marble Mausoleum
+    </div>
+    <!--Image of the wonder as well as a short description. The image will float to the right of the text-->
+    <p>
+        <img src="Taj.jfif" alt="Taj Mahal" style="float:right; width:400px; height:290px">
+        In 1632 the Mughal emperor Shah Jahan commissioned a tomb for his favourite wife Mumtaz Mahal on the southern bank of the river Yamuna, this led to the Taj Mahal being constructed.
+        The Taj Mahal took 20 years to build at a cost of around $956 million and employed around 20,000 artisans under a board of architects. Now it is universally admired as a masterpiece
+        of the world's heritage and a symbol of India's rich history, this attracts 8 million visitors every year.
+    </p>
+    <!--List of facts about the wonder-->
+    <dl>
+        <dt>Built in 1653</dt>
+        <dt>Found in Agra, India</dt>
+        <dt>Legend has it that the emperor intended to build another Mausoleum across the river however a war with his sons stopped this</dt>
+        <dt>Many of the precious stones on the walls were ripped off by the British during the Indian rebellion of 1857</dt>
+        <dt>The name Taj Mahal means the "Crown of Palaces"</dt>
+        <dt>The colour of the building changes throughout the day</dt>
+        <dd>It is yellow at sunrise and blue at night</dd>
+        <dt>The building is almost perfectly symmetrical</dt>
+        <dt>1000 elephants were needed to transport the building materials</dt>
+        <dt>No vehicles are allowed within 500m of the Taj</dt>
+        <dd>This is due to the pollution turning the white marble into a yellow colour</dd>
+    </dl>
+    <!--Creates a button with a hyperlink to the wikipedia article about the wonder in a new tab-->
+    <br><a class="realLink" href="https://en.wikipedia.org/wiki/Taj_Mahal" target="_blank"> Click here for more information</a><br>
+    <div style="background-color:dimgray">
+        <h2>Share your experiences</h2>
+        <!--Button that expands a form which a person can use to share their thoughts about the wonder-->
+        <button class="button" onclick="formButtonClick()"><span>Click to share</span></button>
+        <!--Form is created asking for the person's name,email, visit date and a message-->
+        <form id="formToBeShown" style="display: none;">
+            <fieldset>
+                <legend>Leave your message!</legend>
+                <label for="firstname">Enter your First Name:</label>
+                <input type="text" id="firstname" name="firstname"><br>
+                <label for="lastname">Enter your Last Name:&nbsp</label>
+                <input type="text" id="lastname" name="lastname"><br>
+                <label for="email">Enter your Email:&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                <input type="email" id="email" name="email"><br>
+                <label for="date">Enter your Visit Date:</label>
+                <input type="date" id="date" name="date"><br>
+                <textarea name="message" rows="10" cols="100">Enter your message here:</textarea><br>
+                <input type="submit" value=Submit>
+                <input type="reset" value=Reset>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

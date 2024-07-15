@@ -1,0 +1,206 @@
+/* Used for main title of page */
+div {
+    color: white;
+    text-align: center;
+    font-family:fantasy;
+    font-size: xx-large;
+}
+
+/* All used in the navigation bar */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    top: 0;
+    background-color:#333;
+    position: sticky;
+    overflow: auto; 
+    font-family:cursive;
+}
+
+li {
+    display: inline-block;
+}
+
+li:last-child{
+    border-right: none;
+}
+
+li a {
+    color: white;
+    text-align: center;
+    padding: 0px 15px;
+
+}
+
+li a:hover:not(.active) {
+    background-color: black;
+}
+
+li a.active {
+    background-color:orange;
+    color:dimgray
+} 
+
+/* Information about the wonder formatting */
+p {
+    color: white;
+    font-size:large;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Used in the form text */
+h2 {
+    color: white;
+    font-size: x-large;
+    font-family: monospace;
+}
+
+/* Used in the facts list */
+dl {
+    color: white;
+    font-size: large;
+    font-family: cursive;
+    padding-bottom: 15px;
+    padding-left: 30px;
+}
+
+/* Used to format some form text */
+form {
+    color: white;
+    font-size: medium;
+    font-family: monospace;
+    text-align: left;
+}
+
+/* Used to format the button that links to the wikipedia pages */
+a.realLink {
+    background-color: white;
+    color: black;
+    padding: 15px 25px;
+    text-align: center;
+    display: inline-block;
+    border: 2px solid darkblue;
+    font-size: large;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgb(37, 4, 222);
+}
+
+a.realLink:hover, a.realLink:active {
+    background-color: darkcyan;
+    border: darkcyan;
+    color: white;
+} 
+
+/* Used to format and create the animated text */
+.mainText {
+    color: white;
+    font-size:90px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align:center;
+    animation-name: mainText;
+    animation-duration: 3s;
+    position: relative;
+}
+
+@keyframes mainText {
+    0% {color:black; right:50%;}
+    25% {color:red; right:0%;}
+    50% {color:blue;}
+    75% {color:green;}
+    100%{color:white;}
+}
+
+/* More form formatting this time it's the boxes and buttons */
+input[type=text], input[type=email], input[type=date] {
+    border: 2px solid black;
+    border-radius: 4px;
+    width: 30%
+}
+
+textarea {
+    border: 2px solid black;
+    border-radius: 4px;
+    resize: none;
+}
+
+input[type=submit], input[type=reset] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/* Used to format the button that displays the form */
+.button {
+    display:inline-block;
+    border-radius: 4px;
+    background-color:darkslategrey;
+    border:none;
+    color:white;
+    text-align:center;
+    font-size:large;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding:20px;
+    width:200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: "\2193";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/* Used to format the button that chooses a random wonder on the main page */
+.buttonRand {
+    display: block;
+    font-size: 24px;
+    box-shadow: 0 9px #333;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    background-color:cadetblue;
+    outline: none;
+    text-align: center;
+    padding: 15px 25px;
+    cursor: pointer;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 auto;
+}
+
+.buttonRand:hover {
+    background-color:chartreuse;
+}
+
+.buttonRand:active {
+    background-color: chartreuse;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}

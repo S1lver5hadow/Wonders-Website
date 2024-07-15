@@ -1,0 +1,86 @@
+<html>
+<head>
+    <!--Sets the title of the webpage-->
+    <title>Christ The Redeemer</title>
+    <!--Sets the icon of the webpage-->
+    <link rel="icon" href="Icon.ico">
+    <!--Linking to the main CSS file used-->
+    <link rel="stylesheet" href="MainCSS.css">
+    <!--Linking to the main JavaScript file used-->
+    <script src="MainScript.js"></script>
+    <!--Sets the background image to take up the entire screen and never repeat-->
+    <style>
+        body {
+            background-image:url("Corcovado.jpg");
+            background-repeat:no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Title at the top of the page-->
+    <div style="background-color:black">Christ The Redeemer</div>
+    <!--Navigation bar-->
+    <ul>
+        <li><a href="HomePage.html">Home</a></li>
+        <li><a href="Pyramid.html">Great Pyramid Of Giza</a></li>
+        <li><a href="Wall.html">Great Wall Of China</a></li>
+        <li><a href="Petra.html">Petra</a></li>
+        <li><a href="Colosseum.html">The Colosseum</a></li>
+        <li><a href="Itza.html">Chichén Itzá</a></li>
+        <li><a href="Machu.html">Machu Picchu</a></li>
+        <li><a href="Taj.html">Taj Mahal</a></li>
+        <li><a class="active" href="Christ.html">Christ The Redeemer</a></li>
+    </ul>
+    <!--Animated flashy text-->
+    <div class="mainText">
+        Explore a Religious Statue
+    </div>
+    <!--Image of the wonder as well as a short description. The image will float to the right of the text-->
+    <p>
+        <img src="Christ.jfif" alt="Christ The Redeemer" style="float:right; width:400px; height:290px">
+        A symbol of Christianity worldwide can be found ontop of Mount Corcovado in Rio de Janeiro, Brazil. Christ the Redeemer was built between 1922 and 1931 to help cure the 
+        "godlessness" in society at the time. The donations came from Brazilian Catholics and the French sculptor Paul Landowski made the work. Recently the statue has been damaged due
+        to stray lightning strikes and erosion however restoration work is ongoing. 
+    </p>
+    <!--List of facts about the wonder-->
+    <dl>
+        <dt>Found at the peak of Mount Corcovado in Rio de Janeiro, Brazil</dt>
+        <dt>Built between 1922 and 1931</dt>
+        <dt>Built using reinforced concrete and an outershell of 6 million soapstone tiles</dt>
+        <dd>It's believed that the workers put hidden messages on the inside of some of these tiles</dd>
+        <dt>The original design intended Christ to hold a globe in one hand and a cross in the other</dt>
+        <dt>It was not orginally built in Brazil</dt>
+        <dd>Paul made it in France in clay pieces which was then shipped to Brazil to be remade with concrete</dd>
+        <dt>Cost $250,000 to build</dt>
+        <dt>It is the tallest art deco statue in the world</dt>
+        <dt>Housing prices in Rio increase if the property has even a small view of the statue</dt>
+    </dl>
+    <!--Creates a button with a hyperlink to the wikipedia article about the wonder in a new tab-->
+    <br><a class="realLink" href="https://en.wikipedia.org/wiki/Christ_the_Redeemer_(statue)" target="_blank"> Click here for more information</a><br>
+    <div style="background-color:dimgray">
+        <h2>Share your experiences</h2>
+        <!--Button that expands a form which a person can use to share their thoughts about the wonder-->
+        <button class="button" onclick="formButtonClick()"><span>Click to share</span></button>
+        <!--Form is created asking for the person's name,email, visit date and a message-->
+        <form id="formToBeShown" style="display: none;">
+            <fieldset>
+                <legend>Leave your message!</legend>
+                <label for="firstname">Enter your First Name:</label>
+                <input type="text" id="firstname" name="firstname"><br>
+                <label for="lastname">Enter your Last Name:&nbsp</label>
+                <input type="text" id="lastname" name="lastname"><br>
+                <label for="email">Enter your Email:&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                <input type="email" id="email" name="email"><br>
+                <label for="date">Enter your Visit Date:</label>
+                <input type="date" id="date" name="date"><br>
+                <textarea name="message" rows="10" cols="100">Enter your message here:</textarea><br>
+                <input type="submit" value=Submit>
+                <input type="reset" value=Reset>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

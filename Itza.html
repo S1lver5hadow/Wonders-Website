@@ -1,0 +1,87 @@
+<html>
+<head>
+    <!--Sets the title of the webpage-->
+    <title>Chichén Itzá</title>
+    <!--Sets the icon of the webpage-->
+    <link rel="icon" href="Icon.ico">
+    <!--Linking to the main CSS file used-->
+    <link rel="stylesheet" href="MainCSS.css">
+    <!--Linking to the main JavaScript file used-->
+    <script src="MainScript.js"></script>
+    <!--Sets the background image to take up the entire screen and never repeat-->
+    <style>
+        body {
+            background-image:url("ItzaSurroundings.jpg");
+            background-repeat:no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Title at the top of the page-->
+    <div style="background-color:black">Chichén Itzá</div>
+    <!--Navigation bar-->
+    <ul>
+        <li><a href="HomePage.html">Home</a></li>
+        <li><a href="Pyramid.html">Great Pyramid Of Giza</a></li>
+        <li><a href="Wall.html">Great Wall Of China</a></li>
+        <li><a href="Petra.html">Petra</a></li>
+        <li><a href="Colosseum.html">The Colosseum</a></li>
+        <li><a class="active" href="Itza.html">Chichén Itzá</a></li>
+        <li><a href="Machu.html">Machu Picchu</a></li>
+        <li><a href="Taj.html">Taj Mahal</a></li>
+        <li><a href="Christ.html">Christ The Redeemer</a></li>
+    </ul>
+    <!--Animated flashy text-->
+    <div class="mainText">
+        Explore a Mythical Mayan City
+    </div>
+    <!--Image of the wonder as well as a short description. The image will float to the right of the text-->
+    <p>
+        <img src="Itza.jfif" alt="Chichén Itzá" style="float:right; width:400px; height:290px">
+        Chichén Itzá is the name of a Mayan city found in Mexico. It was one of the largest Mayan cities and was refered to as a mythical city (Tollan) in later Mesoamerican literature.
+        This city did not have a single time period in which it existed and instead was built upon since 550 AD up until 1550AD. In the past settlers were drawn there due to the easy access
+        to water thanks to the caves and sinkholes. Now the site is famous among archaeologists and tourists for its history and artifacts.
+    </p>
+    <!--List of facts about the wonder-->
+    <dl>
+        <dt>Built between 550AD and 1550AD</dt>
+        <dt>Found in Yucatán, Mexico</dt>
+        <dt>The name "Chichén Itzá" means "the mouth at the well of Itza"</dt>
+        <dd>It is believed that Itza means "water magicians"</dd>
+        <dt>The pyramid found in the city is called El Castillo (the Temple of Kukulkan)</dt>
+        <dd>It actually sits ontop of a much older temple</dd>
+        <dt>During the Spring and Autumn Equinox sunrays create a shadow across the Kukulkan pyramid giving the appearance of a serpent slithering down the staircase</dt>
+        <dd>Kukulkan is the name of a Mesoamerican serpent diety</dd>
+        <dt>Although the Kukulkan pyramid is the most famous, there are actually many other pyramids as well</dt>
+        <dt>Many of the sites in Chichén Itzá produce different sounds depending on where you clap</dt>
+        <dd>A clap in front of the Kukulkan pyramid produces an echo resembling a serpent's chirp</dd>
+    </dl>
+    <!--Creates a button with a hyperlink to the wikipedia article about the wonder in a new tab-->
+    <br><a class="realLink" href="https://en.wikipedia.org/wiki/Chichen_Itza" target="_blank"> Click here for more information</a><br>
+    <div style="background-color:dimgray">
+        <h2>Share your experiences</h2>
+        <!--Button that expands a form which a person can use to share their thoughts about the wonder-->
+        <button class="button" onclick="formButtonClick()"><span>Click to share</span></button>
+        <!--Form is created asking for the person's name,email, visit date and a message-->
+        <form id="formToBeShown" style="display: none;">
+            <fieldset>
+                <legend>Leave your message!</legend>
+                <label for="firstname">Enter your First Name:</label>
+                <input type="text" id="firstname" name="firstname"><br>
+                <label for="lastname">Enter your Last Name:&nbsp</label>
+                <input type="text" id="lastname" name="lastname"><br>
+                <label for="email">Enter your Email:&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                <input type="email" id="email" name="email"><br>
+                <label for="date">Enter your Visit Date:</label>
+                <input type="date" id="date" name="date"><br>
+                <textarea name="message" rows="10" cols="100">Enter your message here:</textarea><br>
+                <input type="submit" value=Submit>
+                <input type="reset" value=Reset>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
